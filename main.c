@@ -108,7 +108,7 @@ int main() {
 
         scanf(" %c", &guess);
         while (getchar() != '\n');// remove extra input if user types more than one char
-        //guess = tolower(guess);
+        guess = tolower(guess);
         isGuessed = charInArray(guesses,guess);
 
         if(!charInArray(word,guess) && isalpha(guess)){
