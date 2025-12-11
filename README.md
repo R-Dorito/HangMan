@@ -10,8 +10,6 @@
 <p>Inputs: takes only letters, no special characters or numbers
 Words: all words used comes from a special list. My favourite word is Mississippi.</p>
 
-<p>Its been 5 days since starting, good progress. Even though it's basic :D</p>
-
 <br/>
 
 <img width="488" height="351" alt="image" src="https://github.com/user-attachments/assets/e0a9b7cc-08d6-49d1-8116-2be3eec05cec" />
