@@ -20,21 +20,21 @@ bool buildGameResult(char *result, const char *word, const char *guesses) {
 
     for (int i = 0; word[i] != '\0'; i++) {
         if (charInArray((char*)guesses, word[i])) {
-            result[i] = word[i];     // letter guessed
+            result[i] = word[i];     
         } else {
-            result[i] = '_';         // not guessed
+            result[i] = '_';         
             complete = false;
         }
     }
 
-    result[strlen(word)] = '\0';   // null-terminate
-    return complete;  // true = win, false = still guessing
+    result[strlen(word)] = '\0';   
+    return complete;  
 }
 
 char* readFile(){
-    char **words = NULL;        // array of pointers to strings
-    int size = 0;               // number of words read
-    char buffer[100];           // buffer to read each line
+    char **words = NULL;        
+    int size = 0;               
+    char buffer[100];           
     FILE *fp = fopen("wordsList.txt", "r");
     int returnNumber;
     int min = 0, max = 0;
@@ -73,9 +73,9 @@ char* toLowerCase(char *arr){
 }
 
 int main() {
-    char *word = toLowerCase(readFile());      // target word
-    char guesses[50] = "";       // user guesses
-    char gameResult[50] = "";    // displayed progress
+    char *word = toLowerCase(readFile());      
+    char guesses[50] = "";       
+    char gameResult[50] = "";    
     char guess;
     void drawHangman(int wrong);
 
@@ -108,7 +108,7 @@ int main() {
 
         scanf(" %c", &guess);
         while (getchar() != '\n');// remove extra input if user types more than one char
-        guess = tolower(guess);
+        //guess = tolower(guess);
         isGuessed = charInArray(guesses,guess);
 
         if(!charInArray(word,guess) && isalpha(guess)){
