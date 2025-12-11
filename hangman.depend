@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1765456511 source:/home/dorito/Documents/Programming/hangman/main.c
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+	<time.h>
+	<stdbool.h>
+	<ctype.h>
+	"render.c"
+
+1765455451 /home/dorito/Documents/Programming/hangman/render.h
+
+1765456106 /home/dorito/Documents/Programming/hangman/render.c
+	"render.h"
+	<stdio.h>
+	<stdlib.h>
+
